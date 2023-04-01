@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react'
 import '@fortawesome/fontawesome-free/css/all.css';
+import {BrowserRouter} from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <ChakraProvider>
-
+<BrowserRouter>
 <App />
+</BrowserRouter>
  </ChakraProvider>
+
    
   
 );
