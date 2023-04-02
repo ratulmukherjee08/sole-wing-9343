@@ -61,13 +61,13 @@ const FirstSlide = () => {
     <Box style={{width:"100%",margin:"10 0 0 10",}}>
     <Grid templateColumns='repeat(5,1fr)'gap={3}>
       {data.map((el)=>
-       <Box style={{marginTop:"15px"}}>
+       <Box style={{marginTop:"15px",border:"1px solid white",borderRadius:"4px",boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",padding:"10px"}}>
        <Image w="80%" src={el.image}/>
         <h3 style={{color:"rgb(9, 173, 239)",fontWeight:"bold",fontSize:"14px"}}>{el.name}</h3>
         <p style={{fontSize:"12px",color:"rgb(81, 80, 80)"}}>Deal Price:{el.price}</p>
         <p style={{fontSize:"12px",color:"rgb(81, 80, 80)"}}>M.R.P:{el.mrp}</p>
         <p style={{fontSize:"15px",color:"green"}}>You Save:{el.yousave}</p>
-        <button style={{border:"1px solid green",color:"green",borderRadius:"4px",fontSize:"10px",margin:"auto"}}>Offers Available</button>
+        <button style={{border:"1px solid green",color:"green",borderRadius:"4px",fontSize:"10px",margin:"auto",padding:"10px"}}>Offers Available</button>
     </Box>
       )}
      </Grid>
